@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ayesha KJ - Portfolio</title>
+    
+    <!-- Basic CSS for Styling -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #34495e;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .project-list {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .project-list .project-name {
+            color: #27ae60; /* Green color for project names */
+            font-weight: bold;
+        }
+
+        .project-list div {
+            margin-bottom: 10px;
+        }
+
+        /* Styling for profile, skill, AI, project, and contact images */
+        .profile-pic, .skill-pic, .ai-pic, .project-pic, .contact-pic {
+            display: block;
+            margin: 20px auto; /* Centers the image */
+            max-width: 100%; /* Ensures responsiveness */
+            width: 300px; /* Standard width for all images */
+            height: 300px; /* Standard height for all images */
+            object-fit: cover; /* Ensures the image covers the circle/square without distortion */
+            border-radius: 8px; /* Rounded corners for a modern look */
+            border: 3px solid #2980b9; /* Border color */
+            padding: 10px; /* Adds space between image and border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p, .project-list {
+                font-size: 1em;
+            }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+
+            .profile-pic, .skill-pic, .ai-pic, .project-pic, .contact-pic {
+                width: 200px; /* Smaller size for smaller screens */
+                height: 200px; /* Maintains aspect ratio */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Ayesha KJ</h1>
+        <p>Web Developer, Cybersecurity & AI Expert</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile pic.jpeg" alt="Your Name" class="profile-pic"> <!-- Replace with your image file -->
+        <p>Hello! My name is Ayesha KJ, and I am a passionate web developer with expertise in cybersecurity and AI. I focus on creating secure, efficient applications while exploring machine learning, AI integration, and threat mitigation strategies.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <img src="skillimage.jpeg" alt="Skills" class="skill-pic"> <!-- Replace with your skills image -->
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python (AI & Web Development)</li>
+            <li>Cybersecurity Fundamentals</li>
+            <li>Ethical Hacking Techniques</li>
+            <li>Penetration Testing (Network & Web Applications)</li>
+            <li>Vulnerability Assessment</li>
+            <li>Encryption & Cryptography</li>
+            <li>Machine Learning (Intermediate)</li>
+            <li>Data Science (Beginner)</li>
+        </ul>
+    </section>
+
+    <!-- AI Expertise Section -->
+    <section id="ai-expertise">
+        <h2>AI Expertise</h2>
+        <img src="AI image.jpeg" alt="AI Expertise" class="ai-pic"> <!-- Replace with your AI expertise image -->
+        <p>I have a solid foundation in artificial intelligence and machine learning. My projects involve creating intelligent systems, from AI chatbots to machine learning models. I focus on developing AI-driven solutions that enhance decision-making, automation, and threat detection.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Future Projects</h2>
+        <img src="FutureProjects image.jpeg" alt="Projects" class="project-pic"> <!-- Replace with your projects image -->
+        <p>Below are some exciting projects I am planning to work on:</p>
+        <div class="project-list">
+            <div><span class="project-name">AI Chatbot:</span> A Python-based AI chatbot capable of natural language interaction.</div>
+            <div><span class="project-name">Sentiment Analysis Tool:</span> A tool using AI to analyze sentiment in social media posts or reviews.</div>
+            <div><span class="project-name">Personalized AI Recommender System:</span> A system that recommends movies or books using machine learning algorithms.</div>
+            <div><span class="project-name">Secure E-commerce Website:</span> An e-commerce site with encryption and secure payment gateways.</div>
+            <div><span class="project-name">Penetration Testing Tool:</span> A tool automating the penetration testing process for web applications.</div>
+            <div><span class="project-name">AI-Based Intrusion Detection System:</span> An AI-powered system for real-time detection of cyber threats.</div>
+            <div><span class="project-name">Ethical Hacking Simulation:</span> A simulated environment for practicing ethical hacking techniques.</div>
+            <div><span class="project-name">Cybersecurity Blog:</span> A blog focused on the latest cybersecurity trends and mitigation strategies.</div>
+            <div><span class="project-name">Password Manager with Encryption:</span> A secure password manager utilizing cryptographic techniques.</div>
+            <div><span class="project-name">AI-Powered Personal Assistant:</span> An assistant that automates tasks like scheduling and emailing.</div>
+            <div><span class="project-name">AI Stock Market Predictor:</span> A machine learning model predicting stock market trends.</div>
+            <div><span class="project-name">Responsive Blog Website:</span> A mobile-friendly blog site with features like commenting and search.</div>
+            <div><span class="project-name">AI-Powered Resume Analyzer:</span> A tool analyzing resumes with feedback based on AI algorithms.</div>
+            <div><span class="project-name">Text Summarizer:</span> A Python-based tool that summarizes lengthy texts using NLP.</div>
+            <div><span class="project-name">Secure Messaging App:</span> An encrypted messaging app ensuring secure communication.</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <img src="contact image.jpeg" alt="Contact" class="contact-pic"> <!-- Replace with your contact image -->
+        <p>Email: <a href="mailto:ayeshakj137@example.com">ayeshakj@example.com</a></p> <!-- Replace with your email -->
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ayeshakj">linkedin.com/in/ayeshakj</a></p> <!-- Replace with your LinkedIn -->
+        <p>GitHub: <a href="https://github.com/ayeshakj">github.com/ayeshakj</a></p> <!-- Replace with your GitHub -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ayesha KJ. All rights reserved.</p>
+    </footer>
+</body>
+</html>
